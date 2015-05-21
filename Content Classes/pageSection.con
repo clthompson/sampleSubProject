@@ -1,0 +1,46 @@
+opt_bgColor - optional background color
+opt_forSmall - display option for small screens
+opt_navArrowsDisplay - display option for arrow bar
+opt_navArrowsLast - option to define arrow bar as the last arrow
+stf_anchorUp - anchor target for up arrow
+stf_anchorDown - anchor target for down arrow
+
+Code
+        <span class="anchor" id="<%stf_anchorTarget%>"></span>
+        <div class="">
+
+RedDots
+            <!IoRangeRedDotMode><section class="row"><div class="large-12 columns" style="padding: 15px 0px 0px 0px;"><!/IoRangeRedDotMode>
+
+            <!IoRangeRedDotMode><!IoRedDotOpenPage><!IoRangeNoEditMode><span style="color:red">Open Section</span><br/><br/><!/IoRangeNoEditMode>
+            <!IoRangeRedDotEditOnly><span style="color:red">Close Section</span><br/><br/><!/IoRangeRedDotEditOnly><!/IoRangeRedDotMode>
+
+            <!IoRangeRedDotEditOnly>
+              <span style="font-weight: bold">Name, Color and Display the Section:</span></br>
+              <!IoRedDot_stf_anchorTarget><span style="color:red">Add/Edit Anchor Target</span></br>
+              <!IoRedDot_opt_forSmall><span style="color:red">Display/Hide Section for Mobile Screens?</span></br>
+              <!IoRedDot_opt_bgColor><span style="color:red">Add/Change Background Color</span></br></br>
+              <span style="font-weight: bold">Nav Arrows:</span></br>
+              <!IoRedDot_opt_navArrowsDisplay><span style="color:red">Display/Hide Nav Arrows</span></br>
+              <!IoRedDot_opt_navArrowsLast><span style="color:red">Is this the last navArrows?</span></br>
+              <!IoRedDot_stf_anchorUp><span style="color:red">Add/Edit Up Arrow Target</span></br>
+              <!IoRedDot_stf_anchorDown><span style="color:red">Add/Edit Down Arrow Target</span></br></br>
+              <span style="font-weight: bold">Section Objects:</span></br>
+              <!IoRedDot_con_sectionObject><span style="color:red">Add Section Objects</span></br>
+            <!/IoRangeRedDotEditOnly>
+                
+            <!IoRangeRedDotMode></div></section><!/IoRangeRedDotMode>
+
+Code
+            <section class="row rowInside <%opt_bgColor%> <%opt_forSmall%>">
+                <%con_sectionObject%>
+            </section>
+            <section class="row navArrows <%opt_navArrowsDisplay%> <%opt_navArrowsLast%>">
+                <div class="large-12 columns">
+                    <!IoRangeConditional><a href="#<%stf_anchorUp%>" ga-category="BOB" ga-action="Navigate" ga-label="BOB NavArrows <%stf_anchorUp%>"><div class="arrowUp"></div></a><!/IoRangeConditional>
+                    <!IoRangeConditional><a href="#<%stf_anchorDown%>" ga-category="BOB" ga-action="Navigate" ga-label="BOB NavArrows <%stf_anchorDown%>"><div class="arrowDown"></div></a><!/IoRangeConditional>
+                </div>
+
+            </section>
+        </div>
+ 

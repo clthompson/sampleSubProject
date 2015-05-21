@@ -1,0 +1,47 @@
+stf_large - width for desktops
+stf_largeOffset - offset for desktops
+stf_medium - width for tablets
+stf_small - width for phones
+opt_forSmall - display option for small screens
+stf_heading - heading label
+con_features - features above the text content
+img_image - image
+txt_text - text content
+con_features2 - features above the text content
+
+Code
+<div class="<!IoRangeConditional>large-<%stf_large%> <!IoRangeConditional>large-offset-<%stf_largeOffset%><!/IoRangeConditional>  <!/IoRangeConditional><!IoRangeConditional>medium-<%stf_medium%><!/IoRangeConditional> <!IoRangeConditional>small-<%stf_small%><!/IoRangeConditional> <%opt_forSmall%> columns">
+
+Red Dots    
+        <!IoRangeRedDotMode><section class="row"><div class="large-12 columns" style="padding: 15px 0px 0px 0px;"><!/IoRangeRedDotMode>
+
+        <!IoRangeRedDotMode><!IoRedDotOpenPage><!IoRangeNoEditMode><span style="color:red">Open Section Object</span><br/><br/><!/IoRangeNoEditMode>
+        <!IoRangeRedDotEditOnly><span style="color:red">Close Section Object</span><br/><br/><!/IoRangeRedDotEditOnly><!/IoRangeRedDotMode>
+
+        <!IoRangeRedDotEditOnly>
+            <span style="font-weight: bold">Section Object Display:</span></br>
+            <!IoRedDot_stf_large><span style="color:red">Add/Edit Width for Desktops</span></br>
+            <!IoRedDot_stf_largeOffset><span style="color:red">Add/Edit Offset for Desktops</span></br>
+            <!IoRedDot_stf_medium><span style="color:red">Add/Edit Width for Tablets</span></br>
+            <!IoRedDot_stf_small><span style="color:red">Add/Edit Width for Mobile</span></br>
+            <!IoRedDot_opt_forSmall><span style="color:red">Display/Hide Section for Mobile Screens?</span></br></br>
+            <span style="font-weight: bold">Object Content:</span></br>
+            <!IoRedDot_stf_heading><span style="color:red">Add/Edit Heading</span></br>
+            <!IoRedDot_con_features><span style="color:red">Add Features: Buttons, Icons, Map, List, etc., Above Text Content</span></br>
+            <!IoRedDot_img_image><span style="color:red">Add/Edit Image</span></br>
+            <!IoRedDot_txt_text><span style="color:red">Add/Edit Text Content</span></br>
+            <!IoRedDot_con_features2><span style="color:red">Add Features: Buttons, Icons, Map, List, etc., Below Text Content</span></br>
+        <!/IoRangeRedDotEditOnly>
+                
+        <!IoRangeRedDotMode></div></section><!/IoRangeRedDotMode>
+
+Code
+    <div class="sectionObject">
+        <!IoRangeConditional><h2 class="objectHeader"><%stf_heading%></h2>
+        <div class="sectionHeaderLine"></div><!/IoRangeConditional>
+        <!IoRangeConditional><div class="featureTop"><%con_features%></div><!/IoRangeConditional>
+        <!IoRangeConditional><img src="<%img_image%>"><!/IoRangeConditional>
+        <!IoRangeConditional><div class="contentElements"><%txt_text%></div><!/IoRangeConditional>
+        <!IoRangeConditional><div class="featureBottom"><%con_features2%></div><!/IoRangeConditional>
+    </div>
+</div>

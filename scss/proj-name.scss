@@ -1,8 +1,20 @@
-@import "settings";
-@import "foundation";
+// master variable overrides
+@import "../../../master/scss/master_var";
+
+// master CSS styles
+@import "../../../master/scss/master_css";
+
+//this is all the master stuff - gets front loaded unless we shut it off
+
+// local variable overrides
+@import "local_var";
+
+// local foundation settings and includes
+// @import "settings"; //turn this on to modify this locally. Otherwise the master gets used.
+// @import "foundation"; //turn this on if you want all the foundation features. Or turn off and choose below.
 
 // Or selectively include components
-// @import
+ @import
 //   "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
 //   "foundation/components/block-grid",
@@ -14,9 +26,9 @@
 //   "foundation/components/dropdown-buttons",
 //   "foundation/components/flex-video",
 //   "foundation/components/forms",
-//   "foundation/components/grid",
+   "foundation/components/grid", // turned on by default
 //   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
+//   "foundation/components/joyride", 
 //   "foundation/components/keystrokes",
 //   "foundation/components/labels",
 //   "foundation/components/magellan",
@@ -37,4 +49,7 @@
 //   "foundation/components/top-bar",
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+   "foundation/components/visibility"; // turned on by default
+
+// local CSS styles - only change the global styles/attributes that we want to change, and all additional unique styles  
+@import "local_css";

@@ -1,0 +1,57 @@
+text_keywords - page keywords
+text_description - page description
+text_description - meta de
+opt_robots - hide from SEO
+con_headerScripts - header scripts
+con_header - visual header
+con_content - content sections
+con_footer - visual footer 
+con_footerScripts - footer scripts
+
+Code
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <title>Brooklyn College | <%headline_parent%></title>
+
+    <!-- <%stf_title%> -->
+    <meta name="keywords" content="<%text_keywords%>" />
+    <meta name="description" content="<%text_description%>" />
+
+    <%opt_robots%>
+
+    <%con_headerScripts%>
+
+  </head>
+  <body data-responsejs='{"create" : {"mode" : "src", "prefix" : "src"}}' class="cbp-spmenu-push">
+
+    
+    <header class="">
+    <%con_header%>
+    </header>
+
+    <section class="content">
+
+Red Dots
+    <!IoRangeRedDotMode><section class="row"><div class="large-12 columns" style="padding: 150px 0px 0px 0px;"><!/IoRangeRedDotMode>
+    <!IoRangeRedDotMode><!IoRedDotOpenPage><!IoRangeNoEditMode><span style="color:red">Open Page</span><br/><br/><!/IoRangeNoEditMode>
+    <!IoRangeRedDotEditOnly><span style="color:red">Close Page</span><br/><br/><!/IoRangeRedDotEditOnly><!/IoRangeRedDotMode>
+
+    <!IoRangeRedDotEditOnly>
+        <!IoRedDot_stf_title><span style="color:red">Add/Edit Page Title</span></br>
+        <!IoRedDot_con_content><span style="color:red">Add/Edit/Order Content Sections</span><!/IoRangeRedDotEditOnly>
+    <!IoRangeRedDotMode></div></section><!/IoRangeRedDotMode>
+
+Code    
+    <%con_content%>
+    </section>
+
+    <footer>
+    <%con_footer%>
+    </footer>
+    
+    <%con_footerScripts%>
+
+  </body>
+</html>
+ 

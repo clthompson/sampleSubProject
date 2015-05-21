@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+//
+// Custom Styles 
+//
+
+// Media Query Starts
+// @media #{$Five00} {}
+// @media #{$Phone} {}
+// @media #{$iPadPortrait} {} 
+// @media #{$Desktop} {}
+
+// @media #{$Small} {}
+// @media #{$Medium} {}
+// @media #{$Large} {}
+// @media #{$xLarge} {}
+
+header {
+	nav {
+
+	}
+}
+
+.anchor {
+	
+}
+
+.content { // content
+	article {
+		
+	}
+	.rowInside { // for overall padding for a row (can't use margins on rows)
+		.sectionObject { // insides of each column setup 
+			.contentElements { // actual content
+
+			}
+		}
+	}
+}
+
+aside {
+
+}
+
+
+
+footer {
+
+}
