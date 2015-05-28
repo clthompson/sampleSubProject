@@ -1,39 +1,12 @@
+text_jsScripts - custom external scripts and/or in-page scripts
+
+Code
     <!-- Footer Elements -->
         <script src="http://www.brooklyn.cuny.edu/web/js/ga-eventtracker.js"></script>  <!-- eventTracker -->
+        <script src="http://www.brooklyn.cuny.edu/web/js/foundation/bower_components/foundation/js/foundation.min.js"></script>  <!-- Foundation -->
+        <script src="http://www.brooklyn.cuny.edu/web/js/response.js"></script>  <!-- responsive content images --> 
 
-        <script src="http://www.brooklyn.cuny.edu/web/js/bob/bower_components/foundation/js/foundation.min.js"></script>  <!-- Foundation -->
+        <%text_jsScripts%>
 
-        <script src="http://www.brooklyn.cuny.edu/web/js/response.js"></script>  <!-- responsive content images -->
-        <script src="http://www.brooklyn.cuny.edu/web/js/bob/classie.js"></script>  <!-- Classie -->
-        
-        <script>
-            var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-                showRightPush = document.getElementById( 'showRightPush' ),
-                body = document.body;
-            
-            showRightPush.onclick = function() {
-                classie.toggle( this, 'active' );
-                classie.toggle( body, 'cbp-spmenu-push-toleft' );
-                classie.toggle( menuRight, 'cbp-spmenu-open' );
-                disableOther( 'showRightPush' );
-            };
-        </script>
-
-        <script>
-            $('a[href^=#]').on("click",function(){
-                var t= $(this.hash);
-                var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
-                if(t.length){
-                    var tOffset=t.offset().top;
-                    $('html,body').animate({scrollTop:tOffset-20},'slow');
-                    return false;
-                }
-            });
-        </script>
-
-        <script>
-            $(document).foundation();
-        </script>
-
+        <script>$(document).foundation();</script>
     <!-- End Footer Elements -->
- 

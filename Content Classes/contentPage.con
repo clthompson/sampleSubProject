@@ -1,6 +1,11 @@
+stf_title - page title
+info_pageID - OpenText page ID
+headline_parent - page headline
 text_keywords - page keywords
 text_description - page description
-text_description - meta de
+info_pageURL - OpenText page URL
+img_favicon - favicon icon
+image_ogPageImage - social image for FB and TW
 opt_robots - hide from SEO
 con_headerScripts - header scripts
 con_header - visual header
@@ -15,8 +20,34 @@ Code
     <title>Brooklyn College | <%headline_parent%></title>
 
     <!-- <%stf_title%> -->
+    <!-- Page ID: <%info_pageID%> -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0"/>
+
+    <meta name="<%headline_parent%>">
     <meta name="keywords" content="<%text_keywords%>" />
     <meta name="description" content="<%text_description%>" />
+
+    <link rel="shortcut icon" type="image/ico" href="<%img_favicon%>" />
+
+    <!-- FB OG protocol -->
+    <meta property="og:title" content="Brooklyn College | <%headline_parent%>" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%info_pageURL%>" />
+    <meta property="og:image" content="<%image_ogPageImage%>" />
+    <meta property="og:description" content="<%text_description%>" />
+    <meta property="og:site_name" content="Brooklyn College" />
+
+    <!-- Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bklyncollege411">
+    <meta name="twitter:creator" content="@bklyncollege411">
+    <meta name="twitter:title" content="Brooklyn College | <%headline_parent%>">
+    <meta name="twitter:description" content="<%text_description%>">
+    <meta name="twitter:image:src" content="<%image_ogPageImage%>">
 
     <%opt_robots%>
 

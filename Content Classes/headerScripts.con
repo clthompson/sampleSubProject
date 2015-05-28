@@ -1,26 +1,15 @@
-img_favicon - favicon icon
+stf_css - CSS filename
 text_ga - google analytics code
 
 Code
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="">
-    <meta name="title">
+    <link rel="stylesheet" href="http://www.brooklyn.cuny.edu/web/css/<%stf_css%>">
 
-    <link rel="shortcut icon" type="image/ico" href="<%img_favicon%>" />
-
-    <link rel="home" href="http://www.brooklyn.cuny.edu/web/support/foundation/bob.php" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0"/>
-
-    <link rel="stylesheet" href="http://www.brooklyn.cuny.edu/web/css/bob.css">
-    <script src="http://www.brooklyn.cuny.edu/web/js/bob/bower_components/modernizr/modernizr.js"></script>  <!-- Modernizr -->
-    <script src="http://www.brooklyn.cuny.edu/web/js/bob/bower_components/jquery/dist/jquery.min.js"></script>  <!-- 2015 jQuery -->
+    <script src="http://www.brooklyn.cuny.edu/web/js/foundation/bower_components/modernizr/modernizr.js"></script>  <!-- Modernizr -->
+    <script src="http://www.brooklyn.cuny.edu/web/js/foundation/bower_components/jquery/dist/jquery.min.js"></script>  <!-- 2015 jQuery -->
     
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     
     <!-- Google Analytics -->
-        <%text_ga%> 
- 
+        <%text_ga%>

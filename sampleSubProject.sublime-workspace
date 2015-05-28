@@ -43,7 +43,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6428,
+				"buffer_size": 6434,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,7 +51,7 @@
 			"file": "Content Classes/contentPage.con",
 			"settings":
 			{
-				"buffer_size": 1636,
+				"buffer_size": 3045,
 				"line_ending": "Windows"
 			}
 		},
@@ -59,7 +59,7 @@
 			"file": "Content Classes/headerScripts.con",
 			"settings":
 			{
-				"buffer_size": 1010,
+				"buffer_size": 600,
 				"line_ending": "Windows"
 			}
 		}
@@ -132,6 +132,7 @@
 	},
 	"file_history":
 	[
+		"/Z/Public/webDevelopment/projects/sampleSubProject/Content Classes/footerScripts.con",
 		"/Z/Public/webDevelopment/projects/sampleSubProject/diagram.html",
 		"/Z/Public/webDevelopment/projects/sampleSubProject/working.html",
 		"/Z/Public/webDevelopment/projects/sampleSubProject/sampleSubProject.sublime-project",
@@ -258,7 +259,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -345,15 +346,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 6428,
+						"buffer_size": 6434,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5828,
-								5828
+								5835,
+								5554
 							]
 						],
 						"settings":
@@ -363,7 +364,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1559.0,
+						"translation.y": 1476.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -373,15 +374,15 @@
 					"file": "Content Classes/contentPage.con",
 					"settings":
 					{
-						"buffer_size": 1636,
+						"buffer_size": 3045,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								365,
-								365
+								531,
+								531
 							]
 						],
 						"settings":
@@ -401,7 +402,7 @@
 					"file": "Content Classes/headerScripts.con",
 					"settings":
 					{
-						"buffer_size": 1010,
+						"buffer_size": 600,
 						"regions":
 						{
 						},
